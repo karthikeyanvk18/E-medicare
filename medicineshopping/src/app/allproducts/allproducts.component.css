@@ -1,0 +1,39 @@
+.card {
+  padding: 20px;
+  background-color: rgb(51, 196, 188);
+  border-radius: 10px;
+  width: 290px;
+
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: rgb(20, 20, 116);
+  color: white;
+
+}
+
+.form-control {
+  border-radius: 3px;
+  width: 400px;
+  margin-left: 60%;
+  height: 35px;
+  border: none;
+
+}
+#page{
+  background-color: white;
+  color: black;
+  height: 30px;
+}

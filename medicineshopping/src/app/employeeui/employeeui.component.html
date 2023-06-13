@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+
+<h2 id="head" style="text-align:center;"><b >Available Products</b></h2>
+
+<div class="col-sm-4">
+  <button routerLink="/home"
+  style="background-color: dodgerblue; color:black; margin-left: 280%; width: 16%; height: 40px; border-radius: 10px;">logout</button>
+  <a  style="color:#000000;text-decoration: none;" style="margin-left: 210%;"><b>Filter</b></a>
+  <input type="text" placeholder="search" class="from-control" [(ngModel)]="filteredString"  style="margin-left: 210%; width:60%;"/>
+  
+</div>
+
+
+<table class="table mt-3" >
+  <thead>
+    <tr >
+      <th scope="col">ID</th>
+      <th scope="col">Image</th>
+      <th scope="col">ProductName</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Qty</th>
+      <th scope="col">Price</th>
+      <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;Activate  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit  </th>
+      
+    </tr>
+  </thead>
+
+
+  <tbody>
+
+
+
+  
+    <tr *ngFor="let row of  employeeData | filter1 : filteredString  | paginate:{itemsPerPage:pageNumber, currentPage:currentPg}">
+      <td><b>{{row.id}}</b></td>
+      <td><img [src]="row.img" style="height:50px; width:50px; "></td>
+    
+      <td><b>{{row.productName}}</b></td>
+      <td><b>{{row.brand}}</b></td>
+      <td><b>{{row.qty}}</b></td>
+      <td><b>&#x20b9;{{row.price}}</b></td>
+
+
+      <td>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="switch" >
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button (click)="onEdit1(row)" class="btn btn-info" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"><i style="font-size:24px" class="fa">&#xf044;</i></button>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+<div class="paginate" id="page">
+  <pagination-controls (pageChange)="currentPg = $event"></pagination-controls>
+
+</div>
+<button (click)="clickddEmployee()" class="btn btn-success"  data-bs-toggle="modal"
+data-bs-target="#staticBackdrop">Add Product</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Product detail</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          
+            
+          
+            <div class="mb-3">
+              <label for="profile" >Image</label>
+              <input type="img" formControlName="img" class="form-control" id="exampleInputPassword1">
+            </div>
+          
+          
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ProductName</label>
+            <input type="productName" formControlName="productName" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Brand</label>
+            <input type="brand" formControlName="brand" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Qty</label>
+            <input type="qty" formControlName="qty" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Price</label>
+            <input type="price" formControlName="price" class="form-control" id="exampleInputPassword1">
+          </div>
+
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
+       
+        <button type="button" *ngIf="showUpdate"(click)="updateEmployeeDetails()" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="section-footer border-top padding-y">
+  <div class="container">
+    <p class="float-md-right">
+      &copy; Copyright 2021 All rights reserved
+    </p>
+    <p>
+      <a href="#">Terms and conditions</a>
+    </p>
+  </div><!-- //container -->
+</footer>

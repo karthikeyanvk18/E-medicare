@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  </head>
+    <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+
+      }
+        h1 {
+          color: white;
+          font-style: oblique;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: black;
+          font-style: oblique;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: greenyellow;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: rgb(77, 248, 46);
+        padding: 40px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+      .Button{
+          padding: 10px;
+      }
+    </style>
+    <body>
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>Awesome!</h1> 
+        <p>Your Payment is Successfull<br/>Thank You for your payment an automated payment receipt will be sent to your registerd Email</p>
+
+        <div class="Button">
+            <button style="background-color: dodgerblue; font-style: oblique;" class="btn" routerLink="/allproducts"><b>Okay</b></button>
+      </div>
+      <div class="Button">
+        <button style="background-color: dodgerblue; font-style: oblique;" class="btn" routerLink="/logout"><b>Logout</b></button>
+  </div>
+    </div>
+    </body>
+</html>

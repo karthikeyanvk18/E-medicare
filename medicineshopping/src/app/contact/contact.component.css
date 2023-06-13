@@ -1,0 +1,39 @@
+body
+{
+  background-image: url("../../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+h1,h3{
+  color: black;
+  text-align: center;
+}
+
+.container
+{
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  background-color:dodgerblue;
+  ;
+  border-radius: 10px;
+ 
+}
+
+h2,h4
+{
+  color: black;
+  text-align: center;
+}
+
+.container1
+{
+  text-align-last: center;
+  padding: 10px;        
+}
+
+label, p{
+  text-align: center;
+}

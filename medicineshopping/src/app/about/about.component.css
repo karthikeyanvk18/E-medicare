@@ -1,0 +1,67 @@
+body
+{
+  height: 100%;
+  background-image: url(../../assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  scrollbar-width: none;
+}
+
+h2
+{
+  color: black;
+  text-align: center;
+}
+
+h1
+{
+  color: black;
+  text-align: center;
+  
+}
+
+.container
+{
+  width: 80%;
+  padding: 5px;
+  margin: auto;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.container1
+{
+  width: 80%;
+  padding: 5px;
+  margin: auto;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  font-size: 22px;
+  
+}
+
+h3
+{
+  color: black;
+  text-align: center;
+  line-height: 100%;
+}
+
+p
+{
+  color: black;
+  text-align: center;
+  line-height: 90%;
+  
+}
+
+.container2
+{
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  
+}

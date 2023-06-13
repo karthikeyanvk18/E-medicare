@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<mat-toolbar>
+
+  <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+    placeholder="search products">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>search</mat-icon>
+  </button>&nbsp;&nbsp;&nbsp;
+  <button routerLink="/cart" class="btn btn-primary">
+    <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+    <mat-icon matBadge="{{totalItem}}" matBadgeColor="warn">shopping_cart</mat-icon>
+  </button>&nbsp;&nbsp;&nbsp;
+  <button routerLink="/logout"
+  style="background-color: aquamarine; color:black; width: 6%; height: 40px; border-radius: 10px;">logout</button>
+
+</mat-toolbar>
+
+<body>
+  <div class="container">
+  
+
+    <h1 style="text-align: center;"><strong>ALL PRODUCTS</strong></h1>
+   
+      <div class="content" style="margin-left: 7%;">
+        <div fxLayout="row wrap" fxLayoutGap="80px">
+          <div fxFlex="25%"
+            *ngFor="let item of filterCategory | filter:searchKey:'name' | paginate:{itemsPerPage:pageNumber, currentPage:currentPg}">
+            <div class="card col-md-3">
+
+              <img src="{{item.img}}" alt="" style="margin-left: 10%;">
+              <h4 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">
+                <strong>Name:</strong> &nbsp;&nbsp;{{item.name}}</h4>
+              <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.descpt}}
+              </p>
+              <p><strong>Price:</strong> {{item.price}}</p>
+              <button mat-button color="primary" style="background-color: rgb(85, 94, 173); color: #000; width: 100%;"
+                (click)=addtocart(item)>Add to cart</button>
+            </div>
+            <br><br><br>
+          </div>
+          <div class="paginate" id="page">
+            <pagination-controls (pageChange)="currentPg = $event"></pagination-controls>
+
+          </div>
+
+        </div>
+      </div>
+    
+  </div>
+</body>
+
+</html>

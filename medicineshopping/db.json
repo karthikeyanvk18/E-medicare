@@ -1,0 +1,461 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "img": "../assets/1.jpg",
+      "productName": "Paracetamol",
+      "brand": "Cipla",
+      "qty": "50",
+      "price": "18"
+    },
+    {
+      "id": 2,
+      "img": "../assets/2.jpg",
+      "productName": "Combiflam",
+      "brand": "Cipla",
+      "qty": "50",
+      "price": "22"
+    },
+    {
+      "id": 3,
+      "img": "../assets/3.jpg",
+      "productName": "Diclofenac",
+      "brand": "Alamy",
+      "qty": "20",
+      "price": "30"
+    },
+    {
+      "id": 4,
+      "img": "../assets/anal.jpg",
+      "productName": "Soluble Aspiran",
+      "brand": "Alpyran",
+      "qty": "100",
+      "price": "1999"
+    },
+    {
+      "id": 5,
+      "img": "../assets/anal1.jpg",
+      "productName": "Meloxicam",
+      "brand": "Mobic",
+      "qty": "50",
+      "price": "999"
+    },
+    {
+      "id": 6,
+      "img": "../assets/anal2.jpg",
+      "productName": "Muverac",
+      "brand": "Mobic",
+      "qty": "30",
+      "price": "499"
+    },
+    {
+      "id": 7,
+      "img": "../assets/anal4.jpg",
+      "productName": "Paramed",
+      "brand": "Cipla",
+      "qty": "60",
+      "price": "699"
+    },
+    {
+      "id": 8,
+      "img": "../assets/anal5.jpg",
+      "productName": "Panadol",
+      "brand": "GSK",
+      "qty": "20",
+      "price": "299"
+    },
+    {
+      "id": 9,
+      "img": "../assets/anal6.jpg",
+      "productName": "Trolen",
+      "brand": "Geomax",
+      "qty": "50",
+      "price": "199"
+    },
+    {
+      "id": 10,
+      "img": "../assets/anal7.jpg",
+      "productName": "Hydrocodone",
+      "brand": "Bitarte",
+      "qty": "40",
+      "price": "499"
+    },
+    {
+      "id": 11,
+      "img": "../assets/oflo.jpg",
+      "productName": "Ofloxacin",
+      "brand": "Floxin",
+      "qty": "40",
+      "price": "89"
+    },
+    {
+      "id": 12,
+      "img": "../assets/teli.jpg",
+      "productName": "Telithromycin",
+      "brand": "Ketek",
+      "qty": "40",
+      "price": "62.9"
+    },
+    {
+      "id": 13,
+      "img": "../assets/Azithro.jpg",
+      "productName": "Azithromycin",
+      "brand": "Esylate",
+      "qty": "40",
+      "price": "43.8"
+    }
+  ],
+  "signup": [
+    {
+      "name": "Sai",
+      "email": "sai@gmail.com",
+      "mobile": 8889997776,
+      "password": "Sai@123",
+      "id": 1
+    },
+    {
+      "name": "saimadhavi",
+      "email": "saimadhavialaparthi@gmail.com",
+      "mobile": 9999988888,
+      "password": "sai@123",
+      "id": 2
+    },
+    {
+      "name": "Abhishek",
+      "email": "abhishek@gmail.com",
+      "mobile": 8888888822,
+      "password": "Abhi@123",
+      "id": 3
+    },
+    {
+      "name": "Anup",
+      "email": "anup@gmail.com",
+      "mobile": 8889997771,
+      "password": "ANup@123",
+      "id": 4
+    }
+  ],
+  "adminlogin": [
+    {
+      "id": "1",
+      "email": "madhavi@gmail.com",
+      "password": "madhavi@123"
+    }
+  ],
+  "checkout": [
+    {
+      "firstname": "Ted ",
+      "email": "ted@gmail.com",
+      "address": "123 lane",
+      "city": "Seattle",
+      "state": "Washington",
+      "zip": "34567",
+      "cardname": "Ted",
+      "cardnumber": "234567890",
+      "expmonth": "4",
+      "expyear": "2023",
+      "cvv": "456",
+      "id": 1
+    },
+    {
+      "cardname": "Ted",
+      "cardnumber": "1234567890",
+      "expmonth": "12",
+      "expyear": "2028",
+      "cvv": "155",
+      "id": 2
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 3
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 4
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 5
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 6
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 7
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 8
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 9
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 10
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 11
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 12
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 13
+    },
+    {
+      "cardname": "",
+      "cardnumber": "",
+      "expmonth": "",
+      "expyear": "",
+      "cvv": "",
+      "id": 14
+    },
+    {
+      "firstname": "madhu",
+      "email": "madhu@gmail.com",
+      "address": "Gun",
+      "city": "dgh",
+      "state": "Ap",
+      "zip": "565498",
+      "cardname": "madhu",
+      "cardnumber": "6546",
+      "expmonth": "10",
+      "expyear": "2023",
+      "cvv": "177",
+      "id": 15
+    }
+  ],
+  "billing": [
+    {
+      "firstname": "dhfjkl",
+      "address1": "qk",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 1
+    },
+    {
+      "firstname": "zdf",
+      "address1": "asdf",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 2
+    },
+    {
+      "firstname": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 3
+    },
+    {
+      "firstname": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 4
+    },
+    {
+      "firstname": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 5
+    },
+    {
+      "firstname": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 6
+    },
+    {
+      "firstname": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 7
+    },
+    {
+      "firstname": "",
+      "address1": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "id": 8
+    },
+    {
+      "firstname": "Ted ",
+      "address1": "123 lane",
+      "address2": "456 lane",
+      "city": "Seattle",
+      "state": "Washington",
+      "zip": "500014",
+      "id": 9
+    }
+  ],
+  "Cart": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,44 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Change Password </h1>
+<br>
+                </div>
+                <form [formGroup]="changepForm" (ngSubmit)="changePa()">
+
+                   
+                    <div class="mb-3">
+                        <label class="form-label"><b>Email address</b></label>
+                        <input formControlName="email" type="email" class="form-control" placeholder="Enter Email"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                            
+                            <span class="text-danger" *ngIf="changepForm.controls['email'].dirty && changepForm.hasError('required','email')">*Email Id is required</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><b>New Password</b></label>
+                        <input formControlName="password" type="password" placeholder="Enter Password"
+                            class="form-control" id="exampleInputPassword1">
+                            
+                            <span class="text-danger" *ngIf="changepForm.controls['password'].dirty && changepForm.hasError('required','password')">*New Password is required</span>
+                           
+                            
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"><b>Re-enter Password</b></label>
+                            <input formControlName="password1" type="password" placeholder="Enter Password"
+                                class="form-control" id="exampleInputPassword1">
+                                
+                                <span class="text-danger" *ngIf="changepForm.controls['password1'].dirty && changepForm.hasError('required','password1')">*Confirm password is required</span>
+                                
+                                
+                            </div>
+                    <button type="submit" [disabled]="!changepForm.valid" class="btn btn-success">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
